@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-neutral-900 text-gray-600">
+    <div class="container w-full h-screen flex items-center justify-center">
+      <div class="flex items-center">
+        <div
+          class="pagination border-2 border-dashed border-purple-500 rounded-2xl shadow-md flex items-center justify-center px-4 py-4"
+        >
+          <button
+            onclick="backBtn()"
+            class="text-neutral-400 px-2 py-2 transform hover:-translate-x-1"
+          >
+            <svg
+              class="w-8 md:w-14 h-8 md:h-14"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="m-2">
+            <li class="link active" value="1" onclick="activeLink()">1</li>
+            <li class="link" value="2" onclick="activeLink()">2</li>
+            <li class="link" value="3" onclick="activeLink()">3</li>
+            <li class="link" value="4" onclick="activeLink()">4</li>
+            <li class="link" value="5" onclick="activeLink()">5</li>
+            <!-- <li class="link" value="6" onclick="activeLink()">6</li> -->
+          </ul>
+
+          <button
+            onclick="nextBtn()"
+            class="text-neutral-400 px-2 py-2 transform hover:translate-x-1"
+          >
+            <svg
+              class="w-8 md:w-14 h-8 md:h-14"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ml-4 md:ml-8 space-x-4 flex">
+          <span
+            class="w-4 md:w-8 h-4 md:h-8 block bg-green-400 rounded-full"
+          ></span>
+          <span
+            class="w-4 md:w-8 h-4 md:h-8 block bg-amber-400 rounded-full"
+          ></span>
+          <span
+            class="w-4 md:w-8 h-4 md:h-8 block bg-red-400 rounded-full"
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./main.js"></script> -->
+    <script src="./app.js"></script>
+  </body>
+</html>
